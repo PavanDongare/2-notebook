@@ -1,0 +1,11 @@
+   Note Books
+   <div *ngIf="noteBooks">
+      <ul class="navListItem">
+          <li *ngFor="let noteBookName of noteBooks; let i = index"
+             class=navListItem >
+            <span class="badge">{{i}}</span>  {{noteBookName}}
+          </li>
+        </ul>
+  </div>
+
+

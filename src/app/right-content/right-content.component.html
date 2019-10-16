@@ -1,0 +1,11 @@
+Pages
+<div *ngIf="pages">
+   <ul class="navListItem">
+       <li *ngFor="let page of pages; let i = index"
+          class=navListItem >
+          <span class="badge">{{i}}</span>
+            {{page}}
+
+       </li>
+     </ul>
+</div>
