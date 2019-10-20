@@ -2,8 +2,7 @@ Pages
 <div *ngIf="pages">
    <ul class="navListItem">
        <li *ngFor="let page of pages; let i = index"
-       (click)=" selectedPage = page"
-       [ngClass]=" { 'selected' : selectedPage == page } "
+
        >
 
             {{page}}
