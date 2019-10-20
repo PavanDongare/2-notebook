@@ -1,0 +1,52 @@
+ul > li {
+  display: inline-block;
+}
+
+ul {
+  margin: inherit;
+}
+
+.navListItem {
+  margin: 0 0 1 0;
+  padding: 0;
+}
+
+.section{
+  overflow: auto;
+}
+
+li.selected {
+  background-color: rgb(168, 0, 0);
+  color: white;
+}
+
+li:focus {
+  background-color:red;
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(167, 189, 181);
+  margin: .5em;
+  padding: .3em 0;
+  height: 2em;
+  border-radius: 4px;
+}
+
+
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}

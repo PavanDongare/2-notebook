@@ -20,7 +20,7 @@ export const dataMock: Data = {
     },
 
     {
-      noteBookName: 'n1',
+      noteBookName: 'n2',
       section: [
         {
           sectionName:'s1',
@@ -35,7 +35,7 @@ export const dataMock: Data = {
     },
 
     {
-      noteBookName: 'n1',
+      noteBookName: 'n3',
       section: [
         {
           sectionName:'s1',
@@ -50,7 +50,7 @@ export const dataMock: Data = {
     },
 
     {
-      noteBookName: 'n1',
+      noteBookName: 'n4',
       section: [
         {
           sectionName:'s1',
@@ -66,7 +66,7 @@ export const dataMock: Data = {
 
 
     {
-      noteBookName: 'n1',
+      noteBookName: 'n5',
       section: [
         {
           sectionName:'s1',
@@ -81,7 +81,7 @@ export const dataMock: Data = {
     },
 
     {
-      noteBookName: 'n1',
+      noteBookName: 'n6',
       section: [
         {
           sectionName:'s1',

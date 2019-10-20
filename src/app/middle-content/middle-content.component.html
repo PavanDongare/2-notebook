@@ -1,1 +1,22 @@
-<p>middle-content works!</p>
+<app-top-content></app-top-content>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>NoteBook</mat-card-title>
+    <mat-card-subtitle>Section</mat-card-subtitle>
+  </mat-card-header>
+  <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+  <mat-card-content>
+    <p>
+      Page
+      {{content.pageName }}
+      {{content.content}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Save</button>
+    <button mat-button>Edit</button>
+  </mat-card-actions>
+</mat-card>

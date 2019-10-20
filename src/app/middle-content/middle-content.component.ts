@@ -1,3 +1,4 @@
+import { PageEntity } from './../data/app.data.interface';
 import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,14 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class MiddleContentComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
-  content: string;
+  content: PageEntity;
 
   ngOnInit() {
     this.dataService.getData();
+    this.getContent();
   }
 
   getContent() {
-    return this.dataService.getContent('n1','s1','p1');
+    this.content = this.dataService.getContent('n1','s1','p1');
+    console.log(this.content)
   }
 
 }

@@ -9,13 +9,14 @@ import { concat } from 'rxjs';
 })
 export class RightContentComponent implements OnInit {
   pages: string[] = [];
+  selectedPage;
 
   constructor(private dataservice: DataService) { }
 
   ngOnInit() {
     // this.pages = this.dataservice.getPages();
     for (let index = 0; index < 50; index++) {
-          this.pages.push('page');
+          this.pages.push('page'+index);
 
     }
   }

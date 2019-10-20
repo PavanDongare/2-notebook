@@ -49,6 +49,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import { LeftContentComponent } from './left-content/left-content.component';
 import { RightContentComponent } from './right-content/right-content.component';
 import { MiddleContentComponent } from './middle-content/middle-content.component';
+import { TopContentComponent } from './top-content/top-content.component';
 
 
 
@@ -58,6 +59,7 @@ import { MiddleContentComponent } from './middle-content/middle-content.componen
     LeftContentComponent,
     RightContentComponent,
     MiddleContentComponent,
+    TopContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,6 +110,6 @@ import { MiddleContentComponent } from './middle-content/middle-content.componen
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
-  exports: [ LeftContentComponent, RightContentComponent, MiddleContentComponent]
+  exports: [ LeftContentComponent, RightContentComponent, MiddleContentComponent, TopContentComponent]
 })
 export class AppModule { }

@@ -21,14 +21,19 @@ li {
   background-color: #DDD;
   left: .1em;
 }
+// li.selected {
+//   background-color: #CFD8DC;
+//   color: white;
+// }
+//  li.selected:hover {
+//   background-color: rgb(6, 56, 63);
+//   color: rgb(88, 5, 5);
+// }
+
 li.selected {
-  background-color: #CFD8DC;
-  color: white;
+  background-color: rgb(168, 0, 0);
 }
- li.selected:hover {
-  background-color: #BBD8DC;
-  color: white;
-}
+
 
 .badge {
   display: inline-block;

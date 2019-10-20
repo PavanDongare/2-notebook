@@ -1,0 +1,18 @@
+Sections
+<div class = "scrollmenu">
+  <div class="section" *ngIf="sections">
+    <ul>
+        <li class="navListItem" *ngFor="let section of sections; let i = index"
+        (click)=" selectedSection = section"
+        [ngClass]=" { 'selected' : selectedSection == section } "
+        >
+             {{section}}
+        </li>
+      </ul>
+
+
+ </div>
+
+
+</div>
+
