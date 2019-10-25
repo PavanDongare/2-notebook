@@ -2,6 +2,12 @@ import { dataMock } from './data/data';
 import { Data, NotebookEntity, SectionEntity } from './data/app.data.interface';
 import { Injectable } from '@angular/core';
 
+/*
+  ways to share data
+  1) subject
+  2) plane old service with data accessed only useing getter and setter
+*/
+
 @Injectable({
   providedIn: 'root'
 })
