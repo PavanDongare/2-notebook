@@ -15,6 +15,24 @@ export const dataMock: Data = {
               content: 'page1'
             }
           ]
+        },
+        {
+          sectionName:'s2',
+          page: [
+            {
+              pageName:'p1',
+              content: 'page1'
+            }
+          ]
+        },
+        {
+          sectionName:'s3',
+          page: [
+            {
+              pageName:'p1',
+              content: 'page1'
+            }
+          ]
         }
       ]
     },
@@ -23,7 +41,7 @@ export const dataMock: Data = {
       noteBookName: 'n2',
       section: [
         {
-          sectionName:'s1',
+          sectionName:'s2',
           page: [
             {
               pageName:'p1',
