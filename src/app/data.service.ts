@@ -11,6 +11,21 @@ export class DataService {
   section : SectionEntity;
   page;
 
+
+
+  commonArray: string[] = [];
+  commonString : string ='start';
+
+  addToCommonArray(ele:string){
+    this.commonArray.push(ele);
+  }
+
+  addToCommonString(ele:string){
+    this.commonString.concat(ele);
+  }
+
+
+
   constructor() {
     this.getData();
   }
