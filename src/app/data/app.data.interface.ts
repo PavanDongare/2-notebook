@@ -13,3 +13,9 @@ export interface PageEntity {
   pageName: string;
   content: string;
 }
+
+export interface Selected {
+  noteBookName: string;
+  sectionName: string;
+  pageName: string;
+}

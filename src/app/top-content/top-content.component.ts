@@ -1,3 +1,4 @@
+import { NotebookEntity, Selected } from './../data/app.data.interface';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
@@ -10,13 +11,21 @@ export class TopContentComponent implements OnInit {
 
   sections: string[] = [];
   selectedSection;
+  selectedNoteBook: NotebookEntity;
+  key: Selected ;
 
-  constructor(private dataservice: DataService) { }
+  constructor(private dataService: DataService) { }
+
+  sendNoteBook(): void {
+    this.dataService.sendSelected(this.key);
+  }
+
+
 
   ngOnInit() {
     // this.pages = this.dataservice.getPages();
     for (let index = 0; index < 50; index++) {
-          this.sections.push('sec'+index);
+          this.sections.push('sec' + index);
 
     }
   }

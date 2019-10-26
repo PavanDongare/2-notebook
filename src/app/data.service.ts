@@ -1,6 +1,8 @@
 import { dataMock } from './data/data';
-import { Data, NotebookEntity, SectionEntity } from './data/app.data.interface';
+import { Data, NotebookEntity, SectionEntity, Selected } from './data/app.data.interface';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 
 /*
   ways to share data
@@ -17,18 +19,23 @@ export class DataService {
   section : SectionEntity;
   page;
 
+  selected : Selected ;
+
+  private noteBook = new Subject<NotebookEntity>();
+
+    sendSelected(S: Selected) {
+        this.noteBook.next(S);
+    }
+
+    clearNoteBook() {
+        this.noteBook.next();  // next notebook is empty
+    }
+
+    getNoteBook(): Observable<any> {
+        return this.noteBook.asObservable();
+    }
 
 
-  commonArray: string[] = [];
-  commonString : string ='start';
-
-  addToCommonArray(ele:string){
-    this.commonArray.push(ele);
-  }
-
-  addToCommonString(ele:string){
-    this.commonString.concat(ele);
-  }
 
 
 
@@ -49,10 +56,10 @@ export class DataService {
   }
 
   getPages(noteBook: string, section: string ) {
-    // const pages: string[] = [];
-    // this.data.notebook.forEach(element => {
-    //   if(this.)
-    // });
+    const pages: string[] = [];
+    this.data.notebook.forEach(element => {
+
+    });
 
   }
 
