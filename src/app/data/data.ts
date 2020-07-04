@@ -117,3 +117,14 @@ export const dataMock: Data = {
   ]
 };
 
+
+/*
+  thinking
+  JSON RESPONSES:
+  1) Get notebook
+    [
+      {note1},
+      {note2},
+      {note3},
+    ]
+*/

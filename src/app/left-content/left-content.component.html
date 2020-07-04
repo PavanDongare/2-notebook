@@ -2,7 +2,7 @@
    <div *ngIf="noteBooks">
       <ul class="navListItem">
           <li *ngFor="let noteBookName of noteBooks; let i = index"
-          (click)=" selectedNoteBook = noteBookName"
+          (click)=" selectedNoteBook = noteBookName; onClick(i);"
           [ngClass]=" { 'selected' : selectedNoteBook == noteBookName } " >
              {{noteBookName}}
           </li>

@@ -17,4 +17,8 @@ export class LeftContentComponent implements OnInit {
     this.noteBooks = this.dataservice.getNoteBookNames();
   }
 
+  onClick(index : number){
+      console.log("number="+index);
+  }
+
 }
